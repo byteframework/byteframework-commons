@@ -8,7 +8,7 @@
         <version>2.2.7.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.byteframework</groupId>
+    <groupId>com.byteframework.commons</groupId>
     <artifactId>commons-util</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
