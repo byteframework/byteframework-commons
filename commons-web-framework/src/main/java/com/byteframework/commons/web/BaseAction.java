@@ -64,13 +64,13 @@ public class BaseAction extends ApplicationObjectSupport {
         this.writecallback(resp, request, response);
     }
 
-    protected void responseSuccess(String msg, HttpServletRequest request, HttpServletResponse response) {
+    protected void responseSuccess(HttpServletRequest request, HttpServletResponse response, String msg) {
         ResponseEntity resp = new ResponseEntity(ErrorCodeEnum.SUCCESS_00000.getCode());
         resp.setMessage(msg);
         this.writecallback(resp, request, response);
     }
 
-    protected void responseFailure(String msg, HttpServletRequest request, HttpServletResponse response) {
+    protected void responseFailure(HttpServletRequest request, HttpServletResponse response, String msg) {
         this.responseFailure(ErrorCodeEnum.ERROR_B0001.getCode(), msg, request, response);
     }
 
@@ -88,7 +88,7 @@ public class BaseAction extends ApplicationObjectSupport {
      * @param request
      */
     protected void writecallback(Object obj, HttpServletRequest request, HttpServletResponse response) {
-        response.setHeader("Access-Control-Allow-Origin", "*");
+//        response.setHeader("Access-Control-Allow-Origin", "*");
 
         if (request.getMethod().equals("OPTIONS")) {
             response.setStatus(HttpServletResponse.SC_OK);
