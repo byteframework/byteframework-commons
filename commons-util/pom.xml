@@ -18,7 +18,7 @@
     <properties>
         <java.version>1.8</java.version>
         <fastjson.version>1.2.58</fastjson.version>
-        <commonsbeanutils.version>1.9.2</commonsbeanutils.version>
+        <commonsbeanutils.version>1.9.4</commonsbeanutils.version>
         <commonslang3.version>3.8.1</commonslang3.version>
         <commonslang.version>2.6</commonslang.version>
     </properties>
